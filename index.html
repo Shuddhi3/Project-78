@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Family Book</title>
+</head>
+<body style="background-image: url(https://i0.wp.com/windowscustomization.com/wp-content/uploads/2018/10/particles-web-2.gif?resize=600%2C365&quality=80&strip=all&ssl=1);">
+    
+<center>
+    
+    
+<img id="family_img" style= "height:450px ; width: 360px; ;" src="Family.jpg">
+<br>
+<br> 
+<h1 id="family_text" style="font-size: 50px; color: white;"> Family Book</h1>
+<button style="border-radius: 15px; background-color: mediumblue; height: 30px; width: 90px; font-size: 20px; color: white; z-index: 30;" 
+id="button1" onclick="next()"> Next</button>
+
+</center>
+
+
+<script>
+var img_array=[
+"Dad.jpg",
+"mom.jpg",
+"picture024.jpg",
+"picture029.jpg"
+];
+
+var text_array=[
+
+"Kirit kumar Jain",
+"Seema Jain",
+"Sayyam Jain",
+"Shuddhi Jain"
+];
+var o = 0;
+var y = 0;
+
+function next() { 
+
+if(o == 4) {
+o=0;
+};
+
+document.getElementById("family_img").src = img_array[o];
+o++;
+
+if(y == 4){
+y=0; 
+}; 
+
+document.getElementById("family_text").innerHTML=text_array[y]; 
+y++;
+
+};
+</script>
+
+
+</body>
+</html>
